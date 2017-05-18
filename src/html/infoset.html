@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>店铺首页</title>
+	<link rel="stylesheet" type="text/css" href="../public/css/flexible.css">
+	<link rel="stylesheet" type="text/css" href="../public/css/mobile.css">
+	<link rel="stylesheet" type="text/css" href="../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../css/infoset.css">
+	<script type="text/javascript" src="../public/js/flexible.js"></script>
+	<script type="text/javascript" src="../public/js/jquery-1.7.2-min.js"></script>
+	<!-- 上传头像 -->
+	<link href="../public/css/topMenu.css" rel="stylesheet">
+	<link href="../public/css/style.css" rel="stylesheet">
+	<script src="../public/js/iscroll-zoom.js"></script>
+	<script src="../public/js/topMenu.js"></script>
+	<script src="../public/js/sonic.js"></script>
+	<script src="../public/js/comm.js"></script>
+	<script src="../public/js/hammer.js"></script>
+	<script src="../public/js/jquery.photoClip.js?v=1"></script>
+	<script src="../public/js/index.js"></script>
+	<script src="../public/js/photoClipInterface.js"></script>
+	<!-- 地址选择 -->
+	<link rel="stylesheet" type="text/css" href="../public/css/LArea.min.css">
+</head>
+<body onload="loaded()">
+	<header>
+		<div class="hleft"><i><img src="../img/leftback.png"></i><span>返回</span></div>
+		<div class="hcenter">个人资料</div>
+		<div class="hright"><a href="javascript:;"><img src="../img/msg.png"></a></div>
+	</header>
+	<div class="content">
+		<div class="info">
+			<div id="headPortrait-interface">
+				<!--顶部菜单-->
+				<!--头像-->
+				<div id="headPortrait-wrapper">
+					<div>
+						<div class="ptext">头像</div>
+						<div class="ppic">
+							<img src="../img/header.png" />
+						</div>
+					</div>
+				</div>
+				<!--底部菜单-->
+				<div id="bottomMenu-wrapper">
+				</div>
+			</div>
+			<div class="nickname">
+				<i>昵称</i>
+				<span>刚好遇见你</span>
+			</div>
+			<div class="tel">
+				<i>手机号码</i>
+				<span>15907159084</span>
+			</div>
+			<div class="relname">
+				<i>真实姓名</i>
+				<span>龙傲天</span>
+			</div>
+			<div class="sex">
+				<i>性别</i>
+				<span>男</span>
+			</div>
+			<div class="birth">
+				<i>生日</i>
+				<span>
+					<input id="date1" readonly="" value="请选择生日">
+				</span>
+			</div>
+			<div class="address">
+				<i>地区</i>
+				<span  class="content-block">
+					<input id="demo1" type="text" readonly="" placeholder="城市选择特效"  value="请选择地区"/>
+            		<input id="value1" type="hidden" value="20,234,504"/>
+				</span>
+			</div>
+		</div>
+
+	</div>
+	<!-- 编辑框 -->
+	<div id="photoClip-interface" style="display: none;width: 100%;height: 100%;">
+		
+		<!--顶部菜单-->
+		<div id="topMenu-wrapper2">
+		</div>
+
+		<!--图片加载-->
+		<div id="photoClip-wrapper">
+			<div class="lazy_tip" id="lazy_tip"><span>1%</span><br>	载入中......</div>
+			<div class="lazy_cover"></div>
+			<div class="pic_edit">
+				<div id="clipArea"></div>
+				<input type="file" id="file" style="opacity: 0;position: fixed;bottom: -100px">
+			</div>
+			<img src="" fileName="" id="hit">
+		</div>
+		
+	</div>
+	<script src="../public/js/LAreaData1.js"></script>
+    <script src="../public/js/LAreaData2.js"></script>
+    <script src="../public/js/LArea.js"></script>
+    <script type="text/javascript" src="../public/js/datePicker.js"></script>
+    <script>
+	    var area1 = new LArea();
+	    area1.init({
+	        'trigger': '#demo1', //触发选择控件的文本框，同时选择完毕后name属性输出到该位置
+	        'valueTo': '#value1', //选择完毕后id属性输出到该位置
+	        'keys': {
+	            id: 'id',
+	            name: 'name'
+	        }, //绑定数据源相关字段 id对应valueTo的value属性输出 name对应trigger的value属性输出
+	        'type': 1, //数据源类型
+	        'data': LAreaData //数据源
+	    });
+	    area1.value=[0,0,0];//控制初始位置，注意：该方法并不会影响到input的value
+	    
+
+
+	    // 生日选择
+	   var calendar = new datePicker();
+		calendar.init({
+			'trigger': '#date1', /*按钮选择器，用于触发弹出插件*/
+			'type': 'date',/*模式：date日期；datetime日期时间；time时间；ym年月；*/
+			'minDate':'1900-1-1',/*最小日期*/
+			'maxDate':'2100-12-31',/*最大日期*/
+			'onSubmit':function(){/*确认时触发事件*/
+				var theSelectData=calendar.value;
+			},
+			'onClose':function(){/*取消时触发事件*/
+			}
+		});
+    </script>	
+</body>
+
+</html>

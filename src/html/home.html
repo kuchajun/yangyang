@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>首页</title>
+	<link rel="stylesheet" type="text/css" href="../public/css/flexible.css">
+	<link rel="stylesheet" type="text/css" href="../public/css/mobile.css">
+	<link rel="stylesheet" type="text/css" href="../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../css/home.css">
+	<link rel="stylesheet" type="text/css" href="../public/css/swiper-3.4.0.min.css">
+	<script type="text/javascript" src="../public/js/swiper-3.4.0.min.js"></script>
+	<script type="text/javascript" src="../public/js/flexible.js"></script>
+	<script type="text/javascript" src="../public/js/jquery-1.7.2-min.js"></script>
+	<!-- <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=DWNKnZMhzXjwifFcnOfBdtw7LcsD7oaN"></script> -->
+</head>
+<body>
+	<header>
+		<div class="hleft"><i><img src="../img/haddress.png"></i><span>武汉</span></div>
+		<div class="hcenter"><i><img src="../img/search.png"></i><input type="text" placeholder="请输入关键字"></div>
+		<div class="hright"><a href="javascript:;"><img src="../img/msg.png"></a></div>
+	</header>
+	<div class="content">
+		<div class="swiper-container banner">
+		    <div class="swiper-wrapper">
+		        <div class="swiper-slide"></div>
+		        <div class="swiper-slide"></div>
+		        <div class="swiper-slide"></div>
+		    </div>
+		    <div class="swiper-pagination"></div>
+		</div>
+		<div class="hmap">
+			<div id="allmap"></div>
+			<div class="nav">
+				<a><img src="../img/li1.png" alt=""><span>美食</span></a>
+				<a><img src="../img/li2.png" alt=""><span>丽人</span></a>
+				<a><img src="../img/li3.png" alt=""><span>酒吧</span></a>
+				<a><img src="../img/li4.png" alt=""><span>KTV</span></a>
+				<a><img src="../img/li5.png" alt=""><span>健身</span></a>
+				<a><img src="../img/li6.png" alt=""><span>酒店住宿</span></a>
+				<a><img src="../img/li7.png" alt=""><span>休闲</span></a>
+				<a><img src="../img/li8.png" alt=""><span>全部</span></a>
+			</div>
+		</div>
+		<!-- 热门痒购和正在进行时 -->
+		<div class="shop">
+			<div class="ynav">
+				<ul>
+					<li class="liactive">热门痒购</li>
+					<li>正在进行</li>
+				</ul>
+				<a href="">更多<img src="../img/more.png" alt=""></a>
+			</div>
+			<div class="tabcontent">
+			    <!-- 热门痒购 -->
+				<div class="swiper-container yang hot">
+				    <div class="swiper-wrapper">
+				        <div class="swiper-slide">
+				        	<dl>
+				        		<dt><img src="../img/yangbg.png"></dt>
+				        		<dd class="title">健身VIP年卡</dd>
+				        		<dd class="num"><i>人数：100</i><span>单价：10</span></dd>
+				        		<dd class="time">截止时间：4月13日</dd>
+				        		<dd class="progress">
+				        			<meter value="80" min="0" max="100" low="1" high="99"></meter>
+								</dd>
+								<dd class="buynow"><i>￥</i><span>1000</span><a href="javascript:;">立即购买</a></dd>
+				        	</dl>
+				        </div>
+				        <div class="swiper-slide">
+				        	<dl>
+				        		<dt><img src="../img/yangbg.png"></dt>
+				        		<dd class="title">健身VIP年卡</dd>
+				        		<dd class="num"><i>人数：100</i><span>单价：10</span></dd>
+				        		<dd class="time">截止时间：4月13日</dd>
+				        		<dd class="progress">
+				        			<meter value="80" min="0" max="100" low="1" high="99"></meter>
+								</dd>
+								<dd class="buynow"><i>￥</i><span>1000</span><a href="javascript:;">立即购买</a></dd>
+				        	</dl>
+				        </div>
+				        <div class="swiper-slide">
+				        	<dl>
+				        		<dt><img src="../img/yangbg.png"></dt>
+				        		<dd class="title">健身VIP年卡</dd>
+				        		<dd class="num"><i>人数：100</i><span>单价：10</span></dd>
+				        		<dd class="time">截止时间：4月13日</dd>
+				        		<dd class="progress">
+				        			<meter value="80" min="0" max="100" low="1" high="99"></meter>
+								</dd>
+								<dd class="buynow"><i>￥</i><span>1000</span><a href="javascript:;">立即购买</a></dd>
+				        	</dl>
+				        </div>
+				        <div class="swiper-slide">
+				        	<dl>
+				        		<dt><img src="../img/yangbg.png"></dt>
+				        		<dd class="title">健身VIP年卡</dd>
+				        		<dd class="num"><i>人数：100</i><span>单价：10</span></dd>
+				        		<dd class="time">截止时间：4月13日</dd>
+				        		<dd class="progress">
+				        			<meter value="80" min="0" max="100" low="1" high="99"></meter>
+								</dd>
+								<dd class="buynow"><i>￥</i><span>1000</span><a href="javascript:;">立即购买</a></dd>
+				        	</dl>
+				        </div>
+				        
+				    </div>
+				    
+				</div>
+				<!-- 正在进行 -->
+				<div class="swiper-container yang now" style="display: none;">
+				    <div class="swiper-wrapper">
+				        <div class="swiper-slide"></div>
+				        
+				    </div>
+				    
+				</div>
+			</div>
+
+		</div>
+		<!-- 精彩回顾 -->
+		<div class="review">
+			<div class="rnav">
+				<ul>
+					<li class="liactive">精彩回顾</li>
+				</ul>
+				<a href="">更多<img src="../img/more.png" alt=""></a>
+			</div>
+			<div class="swiper-container rlist" >
+			    <div class="swiper-wrapper">
+			        <div class="swiper-slide">
+			        	<dl>
+			        		<dt>
+			        			<i><img src="../img/header.png"></i>
+			        			<i>
+			        				<span>ONCEUNCLE</span>
+			        				<span>4月15日22:28</span>
+			        			</i>
+			        		</dt>
+			        		<dd class="title">
+			        			运气实在太好啦，竟然中了喜鹊酒吧的套餐，好开 心！！！！！
+			        		</dd> 
+			        		<dd class="pic">
+			        			<i><img src="../img/list1.png"></i>
+			        			<i><img src="../img/list2.png"></i>
+			        			<i><img src="../img/list3.png"></i>
+			        		</dd>
+			        		<dd class="info">
+			        			<i>中奖信息：喜鹊酒吧套餐(2017/4/13开奖)</i>
+			        			<i>价值：1000元 参与价：10元</i>
+			        			<i>项目编号：8888801</i>
+			        		</dd>
+
+			        	</dl>
+			        </div>
+			        <div class="swiper-slide">
+			        	<dl>
+			        		<dt>
+			        			<i><img src="../img/header.png"></i>
+			        			<i>
+			        				<span>ONCEUNCLE</span>
+			        				<span>4月15日22:28</span>
+			        			</i>
+			        		</dt>
+			        		<dd class="title">
+			        			运气实在太好啦，竟然中了喜鹊酒吧的套餐，好开 心！！！！！
+			        		</dd> 
+			        		<dd class="pic">
+			        			<i><img src="../img/list1.png"></i>
+			        			<i><img src="../img/list2.png"></i>
+			        			<i><img src="../img/list3.png"></i>
+			        		</dd>
+			        		<dd class="info">
+			        			<i>中奖信息：喜鹊酒吧套餐(2017/4/13开奖)</i>
+			        			<i>价值：1000元 参与价：10元</i>
+			        			<i>项目编号：8888801</i>
+			        		</dd>
+
+			        	</dl>
+			        </div>
+			        <div class="swiper-slide">
+			        	<dl>
+			        		<dt>
+			        			<i><img src="../img/header.png"></i>
+			        			<i>
+			        				<span>ONCEUNCLE</span>
+			        				<span>4月15日22:28</span>
+			        			</i>
+			        		</dt>
+			        		<dd class="title">
+			        			运气实在太好啦，竟然中了喜鹊酒吧的套餐，好开 心！！！！！
+			        		</dd> 
+			        		<dd class="pic">
+			        			<i><img src="../img/list1.png"></i>
+			        			<i><img src="../img/list2.png"></i>
+			        			<i><img src="../img/list3.png"></i>
+			        		</dd>
+			        		<dd class="info">
+			        			<i>中奖信息：喜鹊酒吧套餐(2017/4/13开奖)</i>
+			        			<i>价值：1000元 参与价：10元</i>
+			        			<i>项目编号：8888801</i>
+			        		</dd>
+
+			        	</dl>
+			        </div>
+			        
+			    </div>
+			    
+			</div>
+				
+			
+
+		</div>
+	</div>
+	<footer>
+		<a href="javascript:;" class="aActive"><i><img src="../img/home1.png"></i><span>首页</span></a>
+		<a href="javascript:;"><i><img src="../img/yg2.png"></i><span>往期痒购</span></a>
+		<a href="javascript:;"><i><img src="../img/mine2.png"></i><span>我的</span></a>
+	</footer>
+</body>
+<script type="text/javascript">
+	// 控制banner轮播
+	var mySwiper = new Swiper('.banner',{
+		pagination : '.swiper-pagination',
+	
+	})
+	// 控制痒购轮播
+	var mySwiper = new Swiper('.yang',{
+		slidesPerView : "auto",
+		freeMode : true,
+	
+	})
+	// 控制精彩回顾轮播图
+	var mySwiper = new Swiper('.rlist',{
+		slidesPerView : "auto",
+		freeMode : true,
+	
+	})
+
+	// //地图展示
+	// // 百度地图API功能
+	// var map = new BMap.Map("allmap");    // 创建Map实例
+	// map.centerAndZoom(new BMap.Point(116.404, 39.915), 11);  // 初始化地图,设置中心点坐标和地图级别
+	// map.addControl(new BMap.MapTypeControl());   //添加地图类型控件
+	// map.setCurrentCity("北京");          // 设置地图显示的城市 此项是必须设置的
+	// map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+
+
+
+</script>
+</html>

@@ -1,0 +1,537 @@
+html{
+	height: 100%;
+}
+body{
+	min-height: 100%;
+	background: #f0f0f0;
+}
+header{
+	width: 100%;
+	height: 88px;
+	background: #f56b3c;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-sizing: border-box;
+	padding:0 30px;
+	position: fixed;
+	top: 0;
+	left:0;
+	z-index: 99;
+	.hleft{
+		width: 120px;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		i{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 23px;
+			height: 100%;
+			img{
+				width: 23px;
+				height: 42px;
+
+			}
+		}
+		
+		span{
+			flex:1;
+			font-size: 30px;
+			color: #ffffff;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+	.hcenter{
+		width: 400px;
+		height: 54px;
+		border-radius: 8px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 36px;
+		color:#ffffff;
+		
+	}
+	.hright{
+		width: 120px;
+		height: 100%;
+		a{
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			width:100%;
+			height: 100%;
+			img{
+				display: block;
+				width: 52px;
+				height: 48px;
+			}
+		}
+	}
+}
+.content:before{
+	width: 100%;
+	height: 88px;
+	content: " ";
+	display: block;
+}
+.content{
+	.nav{
+		width: 100%;
+		height: 66px;
+		display: flex;
+		justify-content: space-around;
+		background: #ffffff;
+		box-shadow: 0 0 20px -10px #ff4b0e;
+		li{
+			width: 172px;
+			height: 66px;
+			box-sizing: border-box;
+			border-bottom:solid 4px #ffffff;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 30px;
+			color: #717171;
+		}
+		.liactive{
+			border-color: #f5764b;
+			color: #f5764b;
+		}
+	}
+	.main{
+		width: 100%;
+		box-sizing: border-box;
+		padding: 34px 30px;
+
+	}
+	/*未使用*/
+	.notused{
+		width: 100%;
+		height: 305px;
+		background: #ffffff;
+		box-sizing: border-box;
+		padding: 9px 30px 0 30px;
+		/*票的主体*/
+		.coupon{
+			width: 100%;
+			height: 230px;
+			display: flex;
+			/*票主体左边*/
+			.coupon_l{
+				flex: 397;
+				height: 100%;
+				border-radius: 8px;
+				background: #f6693c;
+				position: relative;
+				box-sizing: border-box;
+				padding: 12px 15px;
+				overflow: hidden;
+				/*票左边外层半圆*/
+				.coupon_l_c{
+					width: 56px;
+					height: 56px;
+					border-radius: 28px;
+					background: #f6693c;
+					position: absolute;
+					display: block;
+					top: 50%;
+					margin-top: -28px;
+					left: -19px;
+					z-index: 2;
+					span{
+						display: block;
+						width: 44px;
+						height: 44px;
+						border-radius: 22px;
+						position: absolute;
+						top:6px;
+						left:0px;
+						
+						background: #ffffff;
+					}
+					
+				}
+				.coupon_w{
+					width: 100%;
+					height: 100%;
+					border-radius: 8px;
+					border:4px solid #ffffff;
+					box-sizing: border-box;
+					position: relative;
+					overflow: hidden;
+					
+					/*票左边里层半圆*/
+					.coupon_w_c{
+						z-index: 1;
+						position: absolute;
+						display: block;
+						border:4px solid #ffffff;
+						width: 62px;
+						height: 62px;
+						left: -37px;
+						top: 50%;
+						margin-top: -31px;
+						box-sizing: border-box;
+						border-radius: 31px;
+						background: #f6693c;
+					}
+					/*票左边内容区域*/
+					.coupon_m{
+						width: 100%;
+						height: 100%;
+						position: relative;
+						display: flex;
+						flex-direction: column; 
+						.give{
+							position: absolute;
+							left: 10px;
+							top: 0;
+							font-size: 18px;
+							color: #ffffff;
+							height: 30px;
+							line-height: 30px;
+
+						}
+						p:nth-of-type(1){
+							width: 100%;
+							height: 156px;
+							color:#ffffff;
+							font-size: 42px;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+
+						}
+						.times{
+							width: 100%;
+							height: 36px;
+							display: flex;
+							box-sizing: border-box;
+							border-top:dashed 2px #ffffff;/*no*/
+							
+							.pic{
+								width: 36px;
+								height: 100%;
+								margin-top: 9px;
+								margin-left: 9px;
+								img{
+									display: block;
+									width: 18px;
+									height: 18px;
+								}
+
+
+							}
+							.time{
+
+								flex: 1;
+								height: 100%;
+								line-height: 36px;
+								display: flex;
+								align-items: center;
+								color: #ffffff;
+								font-size: 18px;
+							}
+						}
+
+
+					}
+				}
+			}
+			/*票主体右边*/
+			.coupon_r{
+				position: relative;
+				flex: 233;
+				height: 100%;
+				border-radius: 8px;
+				background: #f99677;
+				box-sizing: border-box;
+				padding: 14px 12px 14px 15px;
+				/*券右边部分最外层半圆*/
+				.coupon_r_c{
+					z-index: 2;
+					position: absolute;
+					display: block;
+					width: 40px;
+					height: 40px;
+					background: #ffffff;
+					top: 50%;
+					margin-top: -20px;
+					right:-17px;
+					border-radius: 20px;
+				}
+				/*券右边部分里层*/
+				.coupon_w{
+					width: 100%;
+					height: 100%;
+					background: #fccabb;
+					border-radius: 8px;
+					position: relative;
+					overflow: hidden;
+					/*券右边边部分里层半圆*/
+					.coupon_w_c{
+						z-index: 1;
+						display: block;
+						position: absolute;
+						right: -37px;
+						width: 62px;
+						height: 62px;
+						border-radius: 31px;
+						background: #f99677;
+						top: 50%;
+						margin-top: -31px;
+
+					}
+					/*右边内容区*/
+					.coupon_m{
+						width: 100%;
+						height:100%;
+						dl{
+							display: block;
+							width: 100%;
+							height: 100%;
+							dt{
+								width: 100%;
+								height: 86px;
+								overflow: hidden;
+								border-radius: 10px;
+								display: flex;
+								align-items: center;
+								justify-content: center;
+								img{
+									display: block;
+									width: 100%;
+
+								}
+							}
+							dd:nth-of-type(1){
+								height: 88px;
+								font-size: 32px;
+								color:#1a1a1a;
+								display: flex;
+								justify-content: center;
+								align-items: center;
+							}
+							dd:nth-of-type(2){
+								height: 28px;
+								width: 100%;
+								display: flex;
+								justify-content: flex-end;
+								a{
+									width: 140px;
+									height: 28px;
+									display: flex;
+									align-items: center;
+									
+									justify-content: flex-end;
+									i{
+										font-size: 18px;
+										color: #707070;
+									}
+									img{
+										height: 20px;
+										margin:0 10px;
+									}
+								}
+							}
+						} 
+					}
+				}
+			}
+		}
+		.giveother{
+			width: 100%;
+			height: 67px;
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			a{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				font-size: 24px;
+				color: #ffffff;
+				background: #f56b3c;
+				width: 94px;
+				height: 35px;
+				border-radius: 8px;
+				box-shadow: 0 10px 20px -10px #fa8056;
+			}
+		}
+	}
+	/*已转赠样式*/
+	.gived{
+		position: relative;
+		.shade{
+			position: absolute;
+			height: 230px;
+			background: rgba(0,0,0,0.3);
+			top: 9px;
+			left:30px ;
+			right: 30px;
+			z-index: 3;
+			overflow: hidden;
+			span:nth-of-type(1){
+				position: absolute;
+				width: 44px;
+				height: 44px;
+				border-radius: 22px;
+				background: #ffffff;
+				top: 50%;
+				left: -19px;
+				margin-top: -22px;
+			}
+			span:nth-of-type(2){
+				position: absolute;
+				width: 40px;
+				height: 40px;
+				border-radius: 20px;
+				background: #ffffff;
+				top: 50%;
+				right: -17px;
+				margin-top: -20px;
+			}
+			div{
+				position: absolute;
+				top: 28px;
+				left: 127px;
+				width: 140px;
+				height: 140px;
+				border-radius: 70px;
+				box-sizing: border-box;
+				border:solid 3px #fbaf5d;/*no*/
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				i{
+					display: block;
+					width: 116px;
+					height: 116px;
+					border-radius: 58px;
+					font-size: 36px;
+					color: #ffffff;
+					background: #f56b3c;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					transform: rotateZ(-20deg);
+				}
+			}
+		}
+	}
+	/*已使用样式*/
+	.used{
+		position: relative;
+		.coupon{
+			.coupon_l{
+				background: #cccccc;
+				.coupon_l_c{
+					background: #cccccc;
+				}
+				.coupon_w .coupon_w_c{
+					background: #cccccc;
+				}
+			}
+			.coupon_r{
+				background: #cccccc;
+				.coupon_w {
+					background: #fafafa;
+					.coupon_m dl dt img{
+						-webkit-filter: grayscale(1);/* Webkit */ 
+						filter:gray;/* IE6-9 */ 
+						filter: grayscale(1);/* W3C */ 
+					}
+					.coupon_w_c{
+						background: #cccccc;
+					}
+				}
+			}
+		}
+
+		.shade{
+			position: absolute;
+			height: 230px;
+			background: rgba(0,0,0,0.3);
+			top: 9px;
+			left:30px ;
+			right: 30px;
+			z-index: 3;
+			overflow: hidden;
+			span:nth-of-type(1){
+				position: absolute;
+				width: 44px;
+				height: 44px;
+				border-radius: 22px;
+				background: #ffffff;
+				top: 50%;
+				left: -19px;
+				margin-top: -22px;
+			}
+			span:nth-of-type(2){
+				position: absolute;
+				width: 40px;
+				height: 40px;
+				border-radius: 20px;
+				background: #ffffff;
+				top: 50%;
+				right: -17px;
+				margin-top: -20px;
+			}
+			div{
+				position: absolute;
+				top: 28px;
+				left: 127px;
+				width: 140px;
+				height: 140px;
+				border-radius: 70px;
+				box-sizing: border-box;
+				border:solid 3px #1a1a1a;/*no*/
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				i{
+					display: block;
+					width: 118px;
+					height: 118px;
+					border-radius: 59px;
+					font-size: 36px;
+					color: #1a1a1a;
+					box-sizing: border-box;
+					border:4px solid #737373;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					transform: rotateZ(-20deg);
+				}
+			}
+		}
+		/*已消费待评价*/
+		.evaluate{
+			width: 100%;
+			height: 67px;
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			a{
+				display: flex;
+				justify-content: flex-end;
+				align-items: center;
+				font-size: 22px;
+				color: #242424;
+				width: 250px;
+				height: 35px;
+				img{
+					height: 24px;
+					margin:0 10px;
+				}
+			}
+		}
+	}
+}

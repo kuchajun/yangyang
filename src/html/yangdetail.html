@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>痒购列表</title>
+	<link rel="stylesheet" type="text/css" href="../public/css/flexible.css">
+	<link rel="stylesheet" type="text/css" href="../public/css/mobile.css">
+	<link rel="stylesheet" type="text/css" href="../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../css/yangdetail.css">
+	<link rel="stylesheet" type="text/css" href="../public/css/swiper-3.4.0.min.css">
+	<script type="text/javascript" src="../public/js/swiper-3.4.0.min.js"></script>
+	<script type="text/javascript" src="../public/js/flexible.js"></script>
+	<script type="text/javascript" src="../public/js/jquery-1.7.2-min.js"></script>
+</head>
+<body>
+	<header>
+		<div class="hleft"><i><img src="../img/leftback.png"></i><span>返回</span></div>
+		<div class="hcenter">喜鹊酒吧痒购列表</div>
+		<div class="hright"><a href="javascript:;"><img src="../img/msg.png"></a></div>
+	</header>
+	<div class="content">
+		<div class="swiper-container banner">
+		    <div class="swiper-wrapper">
+		        <div class="swiper-slide"></div>
+		        <div class="swiper-slide"></div>
+		        <div class="swiper-slide"></div>
+		    </div>
+		    <div class="swiper-pagination"></div>
+		    <a href="javascript:;"><img src="../img/collect.png"></a>
+		    <a href="javascript:;"><img src="../img/share.png"></a>
+		</div>
+		<ul class="main">
+			<!-- 第一列名称 -->
+			<li class="name">
+				<div>
+					<h2>
+						喜鹊酒吧(桃园路店)
+					</h2>
+					<p>
+						<i><img src="../img/okstar.png"></i>
+						<i><img src="../img/okstar.png"></i>
+						<i><img src="../img/okstar.png"></i>
+						<i><img src="../img/okstar.png"></i>
+						<i><img src="../img/okstar.png"></i>
+					</p>
+				</div>
+				<i class="more"> <img src="../img/yellowmore.png"></i>
+			</li>
+			<!-- 第二列进度等内容 -->
+			<li class="info">
+				<h2>
+					<p><i>超值会员卡</i><i><span>￥</span>1000</i></p>
+					<p>团购编号:88888801</p>
+				</h2>
+				<div class="infos">
+					<p>已有95人参加</p>
+					<p><meter value="95" min="0" max="100" low="1" high="99"></meter></p>
+					<p>
+						<i>人数：100</i>
+						<i>单价：10</i>
+						<i>倒计时：08:02:08</i>
+						<i>进度：95%</i>
+					</p>
+					
+					<a class="join" href="javascript:;">立即参与</a>
+					
+				</div>
+			</li>
+
+			<!-- 第三列套餐详情 -->
+			<li class="details">
+				<h2>套餐内容:</h2>
+				<ul>
+					<li>百威 x 10</li>
+					<li>水果拼盘 x 1</li>
+					<li>盐酥鸡 x 1</li>
+					<li>鸡尾酒 x 2</li>
+				</ul>
+				<p>注：未中奖者均可获得20元本店优惠券哦</p>
+			</li>
+			<!-- 第四列购买须知 -->
+			<li class="rule">
+				<h2>购买须知:</h2>
+				<ul>
+					<li>
+						<i>有效期：</i>
+						<span>2015年09月18日至2017年05月11日（周末法定节假日 通用）</span>
+					</li>
+					<li>
+						<i>使用时间：</i>
+						<span>周五、周六22点前使用，其他时间通用</span>
+					</li>
+					<li>
+						<i>预约提示：</i>
+						<span>无需预约，直接消费（高峰期间消费需排号等位）</span>
+					</li>
+					<li>
+						<i>使用规则：</i>
+						<span>1、每张团购券不限使用人数<br>2、不再与其他优惠同享</span>
+					</li>
+					<li>
+						<i>温馨提示：</i>
+						<span>提供免费WI-FI 商家不提供餐后打包服务 本单仅限堂 食，不可外带</span>
+					</li>
+				</ul>
+			</li>
+			<!-- 第五列消费地址 -->
+			<li class="address">
+				<h2>消费地址：</h2>
+				<p>
+					<i><img src="../img/huiaddress.png"></i>
+					<i>洪山区桃园路163号</i>
+					<a class="tel" href=""><img src="../img/phone.png"></a>
+				</p>
+			</li>
+		</ul>
+	</div>
+	<div class="shade">
+		<div class="main">
+			<h2>
+				<i>超值会员卡</i>
+				<span>10元</span>
+			</h2>
+			<form>
+				<i>数量：</i>
+				<div>
+					<span class="subtract" onclick="sub(this)"><img src="../img/subtract1.png"></span>
+					<input type="number" min="1" max="5" value="1" class="num" oninput="total()">
+					<span class="add" onclick="add(this)"><img src="../img/add2.png"></span>
+				</div>
+			</form>
+			<div class="total">
+				<i>小计：</i>
+				<i>￥<span class="price">10</span></i>
+			</div>
+			<div class="decision">
+				<span class="confirm">确定</span>
+				<span class="cancel">取消</span>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="../js/yangdetail.js"></script>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>痒友</title>
+	<link rel="stylesheet" type="text/css" href="../public/css/flexible.css">
+	<link rel="stylesheet" type="text/css" href="../public/css/mobile.css">
+	<link rel="stylesheet" type="text/css" href="../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../css/buddylist.css">
+	<script type="text/javascript" src="../public/js/flexible.js"></script>
+	<script type="text/javascript" src="../public/js/jquery-1.7.2-min.js"></script>
+	<script type="text/javascript" src="../js/common.js"></script>
+	<script type="text/javascript" src="../public/layer_mobile/layer.js"></script>
+</head>
+<body>
+	<header>
+		<div class="hleft"><i><img src="../img/leftback.png"></i><span>返回</span></div>
+		<div class="hcenter">痒友</div>
+		<div class="hright"><a href="javascript:;"><img src="../img/msg.png"></a></div>
+	</header>
+	<div class="content">
+		<div class="search">
+			<div>
+				<input type="text" placeholder="搜索好友" onfocus="gosearch(this)">
+				<a href="javascript:;"><img src="../img/huisearch.png"></a>
+			</div>
+		</div>
+		<ul class="nav">
+			<li>
+				<i><img src="../img/addfriend.png"></i>
+				<span>添加好友</span>
+			</li>
+			<li>
+				<i><img src="../img/recom.png"></i>
+				<span>推荐好友</span>
+			</li>
+		</ul>
+		<ul class="list">
+			<li class="item">
+				<i class="pic"><img onload="imgonload(this,117,117)" src="../img/img1.png"></i>
+				<i class="name">onceuncle</i>
+				<a class="more" href="javascript:;">...</a>
+			</li>
+			<li class="item">
+				<i class="pic"><img onload="imgonload(this,117,117)" src="../img/img1.png"></i>
+				<i class="name">onceuncle</i>
+				<a class="more" href="javascript:;">...</a>
+			</li>
+			<li class="item">
+				<i class="pic"><img onload="imgonload(this,117,117)" src="../img/img1.png"></i>
+				<i class="name">onceuncle</i>
+				<a class="more" href="javascript:;">...</a>
+			</li>
+			<li class="item">
+				<i class="pic"><img onload="imgonload(this,117,117)" src="../img/img1.png"></i>
+				<i class="name">onceuncle</i>
+				<a class="more" href="javascript:;">...</a>
+			</li>
+			
+			
+		</ul>
+	</div>
+	<!-- <div class="edit">
+		<h2>'+$content+'</h2>
+		<a href="javascript:;" onclick="editc(this)"><i><img src="../img/editb.png"></i><span>修改备注</span></a>
+		<a href="javascript:;" onclick="delfriend(this)"><i><img src="../img/delf.png"></i><span>删除好友</span></a>
+	</div> -->
+</body>
+<script type="text/javascript" src="../js/buddylist.js"></script>
+</html>
